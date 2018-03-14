@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/agenda/agenda"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffebcc",
+    "navigationBarTitleText": "记事本",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+        "pagePath": "pages/index/index",
+        "text": "记事本",
+        "iconPath": "assets/img/notes.png",
+        "selectedIconPath": "assets/img/notes_selected.png"
+      },{
+        "pagePath": "pages/agenda/agenda",
+        "text": "日程",
+        "iconPath": "assets/img/agenda.png",
+        "selectedIconPath": "assets/img/agenda_selected.png"
+      }],
+      "color": "#869b74",
+      "selectedColor": "#ffb86c",
+      "backgroundColor": "#ffebcc"
+  },
+  "debug": true
+}

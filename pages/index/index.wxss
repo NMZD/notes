@@ -1,0 +1,9 @@
+/**index.wxss**/
+.notes-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.notes-list li div {
+  display: block;
+}
