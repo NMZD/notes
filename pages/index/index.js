@@ -4,7 +4,7 @@ Page({
   data: {
     notesList: [{
       id: 1,
-      time: Date.now(),
+      time: '',
       content: '还没有笔记，去添加一个吧'
     }],
     addImage: 'url(../../assets/img/add.png)',

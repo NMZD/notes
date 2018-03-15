@@ -6,7 +6,8 @@ Page({
    */
   data: {
     isDisabled: false,
-    content: ''
+    content: '',
+    imgList: []
   },
 
   /**
@@ -37,6 +38,21 @@ Page({
     this.setData({
       content: e.detail.value
     });
+  },
+  uploadImg () {
+    var imgArr = [];
+    var _self = this;
+    wx.chooseImage({
+      success: function(res) {
+        console.log(res);
+        res.tempFilePaths.forEach((item) => {
+          imgArr.push(item)
+        })
+        _self.setData({
+          imgList: imgArr
+        })
+      },
+    })
   },
   cancel () {
     wx.navigateBack();

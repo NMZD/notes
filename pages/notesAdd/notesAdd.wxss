@@ -8,13 +8,21 @@
   display: flex;
   height: 100%;
   flex-direction: column;
+  background-color: #f9f9f9;
+}
+.notes-top {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .notes-add textarea {
-  flex: 1;
   width: 100%;
+  min-height: 200px;
   box-sizing: border-box;
   padding: 20rpx;
   font-size: 28rpx;
+  border-bottom: 1px solid #eee;
+  background-color: #ffffff;
 }
 .notes-add-btn {
   display: flex;
@@ -29,4 +37,43 @@
   font-size: 28rpx;
   color: #869b74;
   border-right: 1px solid #fff;
+}
+.img-box {
+  margin-top: 10rpx;
+  border-top: 1px solid #f1f1f1;
+  background-color: #ffffff;
+}
+.img-upload-name {
+  display: block;
+  padding: 20rpx;
+  font-size: 12px;
+  border-bottom: 1px solid #f6f6f6;
+}
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 0 10px;
+}
+.img-list .img-item {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.img-upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+}
+.img-upload-btn image {
+  width: 50%;
+  height: 50%;
 }

@@ -1,6 +1,20 @@
 <!--pages/notesAdd/notesAdd.wxml-->
 <view class='notes-add'>
-  <textarea placeholder='请输入内容' maxlength='-1' auto-focus='true' auto-height='true' disabled='{{isDisabled}}' value="{{content}}" bindinput='change'></textarea>
+  <view class='notes-top'>
+    <textarea placeholder='请输入内容' maxlength='-1' auto-height='true' disabled='{{isDisabled}}' value="{{content}}" bindinput='change'></textarea>
+    <view class='img-box'>
+      <text class='img-upload-name'>上传照片</text>
+      <view class='img-list'>
+        <view class='img-item' wx:for="{{imgList}}">
+          <image mode='center' src='{{item}}'></image>
+        </view>
+        <view class='img-upload-btn' bindtap='uploadImg'>
+          <image src='../../assets/img/img_add.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  
   <view class='notes-add-btn'>
     <view class='cancel' bindtap='cancel'>取消</view>
     <view class='sure' bindtap='sure'>确定</view>
