@@ -1,2 +1,13 @@
 <!--index.wxml-->
-<rich-text nodes="{{nodes}}"></rich-text>
+<view class='notes-container'>
+  <view class='notes-list'>
+    <view class='notes-item' wx:for="{{notesList}}" bindtap='edit' data-id="{{item.id}}">
+      <text class='notes-time'>{{item.time}}</text>
+      <text class='notes-content'>{{item.content}}</text>
+    </view>
+  </view>
+  <view class='notes-add'>
+    <button bindtap='notesAdd'><image src='../../assets/img/add.png'></image></button>
+    <text>新增</text>
+  </view>
+</view>

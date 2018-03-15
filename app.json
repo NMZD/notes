@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/agenda/agenda"
+    "pages/agenda/agenda",
+    "pages/notesAdd/notesAdd"
   ],
   "window":{
     "backgroundTextStyle":"light",

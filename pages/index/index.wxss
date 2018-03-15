@@ -1,9 +1,55 @@
 /**index.wxss**/
+.notes-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
 .notes-list {
+  flex: 1;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .notes-list li div {
   display: block;
+}
+.notes-item {
+  padding: 10px;
+  border-bottom: 1px dashed #eee;
+}
+.notes-time,
+.notes-content {
+  display: block
+}
+.notes-time {
+  font-size: 12px;
+}
+.notes-content {
+  font-size: 16px;
+  white-space: pre-line;
+  word-break: break-all;
+}
+.notes-add {
+  padding: 10rpx;
+  text-align: center
+}
+.notes-add button {
+  width: 80rpx;
+  height: 80rpx;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.notes-add image {
+  width: 100%;
+  height: 100%;
+}
+.notes-add text {
+  color: #869b74;
+  font-size: 14px;
 }

@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.91",
-	"appid": "touristappid",
-	"projectname": "notes",
+	"libVersion": "1.9.90",
+	"appid": "wx3a588934f114193c",
+	"projectname": "%E6%B5%8B%E8%AF%95%E8%AE%B0%E4%BA%8B%E6%9C%AC",
 	"condition": {
 		"search": {
 			"current": -1,

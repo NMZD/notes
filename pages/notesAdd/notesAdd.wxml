@@ -1,0 +1,9 @@
+<!--pages/notesAdd/notesAdd.wxml-->
+<view class='notes-add'>
+  <textarea placeholder='请输入内容' maxlength='-1' auto-focus='true' auto-height='true' disabled='{{isDisabled}}' value="{{content}}" bindinput='change'></textarea>
+  <view class='notes-add-btn'>
+    <view class='cancel' bindtap='cancel'>取消</view>
+    <view class='sure' bindtap='sure'>确定</view>
+  </view>
+</view>
+
