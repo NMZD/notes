@@ -5,7 +5,7 @@
     <view class='img-box'>
       <text class='img-upload-name'>上传照片</text>
       <view class='img-list'>
-        <view class='img-item' wx:for="{{imgList}}">
+        <view class='img-item' wx:for="{{imgList}}" bindtap='previewImage'>
           <image mode='center' src='{{item}}'></image>
         </view>
         <view class='img-upload-btn' bindtap='uploadImg'>

@@ -40,11 +40,10 @@ Page({
     });
   },
   uploadImg () {
-    var imgArr = [];
-    var _self = this;
+    let imgArr = [];
+    let _self = this;
     wx.chooseImage({
       success: function(res) {
-        console.log(res);
         res.tempFilePaths.forEach((item) => {
           imgArr.push(item)
         })
@@ -52,6 +51,12 @@ Page({
           imgList: imgArr
         })
       },
+    })
+  },
+  previewImage () {
+    let _self = this;
+    wx.previewImage({
+      urls: _self.data.imgList,
     })
   },
   cancel () {
